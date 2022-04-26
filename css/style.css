@@ -1,0 +1,168 @@
+body,
+header {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+}
+header {
+  width: 1050px;
+  margin: 0 auto;
+}
+#logo_wrap {
+  text-align: center;
+}
+#logo_wrap img {
+  width: 103px;
+  height: 79px;
+}
+#header_wrap {
+  position: relative;
+}
+#header_img {
+  position: absolute;
+  top: 0;
+  margin: 16px;
+}
+#header_img img {
+  width: 121px;
+  height: 22px;
+}
+#user_menu {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+}
+#user_menu li {
+  padding: 10px;
+  font-size: 12px;
+  text-decoration: none solid rgb(51, 51, 51);
+  line-height: 35px;
+}
+.join::after {
+  position: absolute;
+  content: '';
+  top: 20px;
+  right: 111px;
+  width: 1px;
+  height: 12px;
+  background-color: #d8d8d8;
+}
+.login::after {
+  position: absolute;
+  content: '';
+  top: 20px;
+  right: 60px;
+  width: 1px;
+  height: 12px;
+  background-color: #d8d8d8;
+}
+/* nav 구현 */
+nav {
+  position: relative;
+}
+#nav_wrap {
+  display: flex;
+  width: 1050px;
+  height: 56px;
+  margin: 0 auto;
+}
+#nav_wrap li {
+  font-size: 16px;
+  padding: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #4c4c4c;
+}
+#category_wrap {
+  position: absolute;
+  font-size: 14px;
+  width: 219px;
+  left: 220px;
+  z-index: 300;
+  display: none;
+}
+#category_wrap ul li {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #f7f7f6;
+}
+.category_icon {
+  padding-right: 8px;
+}
+#nav_input_wrap {
+  position: absolute;
+  top: 10px;
+  right: 400px;
+}
+.nav_input {
+  width: 242px;
+  height: 36px;
+  padding: 0 60px 0 14px;
+  border: 1px solid #f7f7f6;
+  border-radius: 16px;
+}
+.search_icon {
+  position: absolute;
+  top: -9px;
+  left: 250px;
+}
+.location_icon {
+  position: absolute;
+  margin-left: 8px;
+}
+
+/* image 슬라이더 구현  */
+#slider_wrap {
+  position: relative;
+  text-align: center;
+}
+#slider_wrap #slider .slide {
+  display: none;
+}
+#slider_wrap #slider .active {
+  display: block;
+}
+
+#slider_wrap #slider .slide img {
+  width: 1497px;
+  height: 370px;
+}
+
+.right_arrow {
+  position: absolute;
+  top: 150px;
+  right: 250px;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: none;
+  background-image: url('https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_right_52_52.svg');
+  cursor: pointer;
+}
+.left_arrow {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  background-color: transparent;
+  background-image: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_left_52_52.svg);
+  border: none;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+#slide_count {
+  background-color: rgba(0, 0, 0, 0.15);
+  font-weight: 400;
+  height: 24px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 320px;
+  right: 250px;
+}
