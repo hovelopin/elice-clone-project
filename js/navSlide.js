@@ -4,7 +4,7 @@ const categoryWrapUl = document.querySelector('#category ul');
 const categoryItems = document.querySelector('.category_items');
 
 // 마우스를 올렸을때 작동해라
-category.addEventListener('mouseover',(e)=>{
+category.addEventListener('mouseenter',(e)=>{
   categoryWrap.style.display = 'block';
 });
 

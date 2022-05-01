@@ -166,3 +166,53 @@ nav {
   top: 320px;
   right: 250px;
 }
+
+/* section */
+section {
+  width: 1050px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+#section_contents_wrap {
+  display: flex;
+}
+.section_items {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.section_items img {
+  width: 249px;
+  height: 320px;
+  transition: 0.3s;
+}
+.section_img_wrap {
+  width: 240px;
+  height: 320px;
+  overflow: hidden;
+}
+.section_items img:hover {
+  transform: scale(1.1);
+}
+.cart_btn {
+  position: absolute;
+  top: 260px;
+  left: 190px;
+  z-index: 400;
+}
+.cart_btn img {
+  width: 45px;
+  height: 45px;
+}
+
+/* footer */
+footer {
+  width: 1050px;
+}
+#footer_copyright {
+  font-size: 10px;
+  color: #999999;
+  text-align: center;
+  width: 100%;
+  background-color: #f7f7f7;
+}
