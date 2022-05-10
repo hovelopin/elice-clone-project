@@ -158,7 +158,7 @@ header {
 }
 
 #slider_wrap #slider .slide img {
-  width: 1497px;
+  width: 100%;
   height: 370px;
 }
 
@@ -197,13 +197,31 @@ header {
 
 /* section */
 section {
+  position: relative;
   width: 1050px;
   margin: 0 auto;
   margin-top: 70px;
 }
-#section_contents_wrap {
+.section_left_btn {
+  position: absolute;
+  z-index: 300;
+  left: -20px;
+  top: 170px;
+  display: none;
+}
+.section_right_btn {
+  position: absolute;
+  z-index: 300;
+  right: -10px;
+  top: 170px;
+}
+section .gallery_wrap .gallery {
+  display: none;
+}
+section .gallery_wrap .galleryOn {
   display: flex;
 }
+
 .section_items {
   position: relative;
   margin-left: 10px;
@@ -348,4 +366,22 @@ footer {
 .expire_day {
   font-size: 12px;
   color: #999;
+}
+#qnb_wrap {
+  position: absolute;
+  width: 80px;
+  height: 215px;
+  top: 400px;
+  right: 10px;
+}
+.qnb img {
+  width: 80px;
+  height: 120px;
+}
+.qnb_items {
+  color: #333;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
